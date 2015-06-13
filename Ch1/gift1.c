@@ -29,7 +29,7 @@ int main(){
 		fscanf(fin, "%s", line);
 		giver = find(names, line);
 		fscanf(fin, "%d %d", &a, &k);
-                if (k) loss[giver] -= ((int) a/k)*k;
+    if (k) loss[giver] -= ((int) a/k)*k;
 		for (j=0; j<k; j++) {
 			fscanf(fin, "%s", line);
 			receiver = find(names, line);

@@ -14,13 +14,13 @@ int f(char *line) {
 }
 
 main () {
-    FILE *fin  = fopen ("ride.in", "r");
-    FILE *fout = fopen ("ride.out", "w");
-    char line[1000];
-    fscanf (fin, "%s", line);	
-    int a = f(line);
-    fscanf (fin, "%s", line);
-    int b = f(line);
-    fprintf (fout, "%s\n", a == b? "GO" : "STAY");
-    return 0;
+  FILE *fin  = fopen ("ride.in", "r");
+  FILE *fout = fopen ("ride.out", "w");
+  char line[1000];
+  fscanf (fin, "%s", line);	
+  int a = f(line);
+  fscanf (fin, "%s", line);
+  int b = f(line);
+  fprintf (fout, "%s\n", a == b? "GO" : "STAY");
+  return 0;
 }
